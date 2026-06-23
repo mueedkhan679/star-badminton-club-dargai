@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth selection:bg-emerald-500/30 selection:text-emerald-300">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Star Badminton Club Dargai — Management System</title>
+    <meta name="title" content="Star Badminton Club Dargai — Management System" />
+    <meta name="description" content="Official management dashboard for Star Badminton Club Dargai. Track player stats, finance investments, matches, and club insights in real-time." />
+    <meta name="keywords" content="Star Badminton Club, Dargai, Badminton Management, Club Ledger, Player Stats" />
+    <meta name="author" content="Star Badminton Club" />
+    <meta name="theme-color" content="#10b981" /> <!-- Emerald theme color for mobile browsers -->
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/club-logo.svg" />
+    <link rel="shortcut icon" href="/assets/club-logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/club-logo.png" />
+
+    <!-- Open Graph / Facebook (For professional social media sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://starbadmintonclub.com/" /> <!-- Replace with your actual domain later -->
+    <meta property="og:title" content="Star Badminton Club Dargai — Management System" />
+    <meta property="og:description" content="Streamlined digital system to manage player attendance, subscription fees, investments, and court schedules." />
+    <meta property="og:image" content="/assets/club-logo.png" />
+
+    <!-- Twitter Previews -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Star Badminton Club Dargai — Management System" />
+    <meta property="twitter:description" content="Streamlined digital system to manage player attendance, subscription fees, investments, and court schedules." />
+    <meta property="twitter:image" content="/assets/club-logo.png" />
+
+    <!-- Fonts Preconnect & Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Anti-Flash/Theme Script (Optional but Professional) -->
+    <script>
+      // Automatically enforces dark mode on load to prevent light flashes
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.add('dark') // Defaulting to dark for premium club theme
+      }
+    </script>
+  </head>
+  
+  <body class="bg-slate-950 text-slate-100 antialiased min-h-screen">
+    <!-- Root Mounting Point for React -->
+    <div id="root"></div>
+    
+    <!-- Application Entry Point -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
